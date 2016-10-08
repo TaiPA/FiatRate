@@ -7,7 +7,7 @@ setInterval(function() {
     request.get(uri, function(error, response, body) {
         if (!error && response.statusCode == 200) {
             //   			// console.log(body) // Show the HTML for the Google homepage.
-            console.log(i++);
+            console.log("Get Rates from firebase OK: " + i++);
         }
     });
 }, 1000*60*5); // Call every 5 minute
