@@ -1,4 +1,6 @@
 var request = require('request');
+require('console-stamp')(console, '[yyyy-mm-dd HH:MM:ss.l]')
+
 var uri = 'https://fiatrate-ea33f.firebaseio.com/rates.json'
 var i = 0;
 setInterval(function() {
@@ -8,4 +10,4 @@ setInterval(function() {
             console.log(i++);
         }
     });
-}, 2000);
+}, 1000*60*5); // Call every 5 minute
