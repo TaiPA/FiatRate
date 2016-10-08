@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "console-stamp": "^0.2.3",
     "request": "^2.75.0"
   },
   "devDependencies": {},
